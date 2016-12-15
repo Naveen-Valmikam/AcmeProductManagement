@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\products\productListView.html" />
+    <Content Include="app\welcomeView.html" />
     <Content Include="common\services\comon.services.js" />
     <Content Include="common\services\productResource.js" />
     <Content Include="common\services\productResourceMock.js" />
@@ -103,6 +105,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\logo.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -113,6 +116,8 @@
     <Content Include="Scripts\angular-resource.min.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -152,7 +157,6 @@
   <ItemGroup>
     <Folder Include="app\prices\" />
     <Folder Include="css\" />
-    <Folder Include="images\" />
     <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>

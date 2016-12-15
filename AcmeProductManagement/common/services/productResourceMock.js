@@ -76,8 +76,7 @@
 
         $httpBackend.whenGET(productUrl).respond(products);
 
-        //var editingRegex = new RegExp(productUrl + "/[0-9][0-9]*", '');
-
+        var editingRegex = new RegExp(productUrl + "/[0-9][0-9]*", '');
         $httpBackend.whenGET(editingRegex).respond(function (method, url, data) {
             var product = { "productId": 0 };
             var parameters = url.split('/');
