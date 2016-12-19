@@ -3,24 +3,14 @@
 
     angular
         .module("productManagement")
-        .controller("ProductDetailCtrl", ProductDetailCtrl);
+        .controller("ProductDetailCtrl",
+                    ["product", ProductDetailCtrl]);
 
 
-    function ProductDetailCtrl() {
+    function ProductDetailCtrl(product) {
         var vm = this;
 
-        vm.product = {
-            "productId": 1,
-            "productName": "Leaf Rake",
-            "productCode": "GDN-0011",
-            "releaseDate": "March 19, 2009",
-            "description": "Leaf rake with 48-inch wooden handle.",
-            "cost": 9.00,
-            "price": 19.95,
-            "category": "garden",
-            "tags": ["leaf", "tool"],
-            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
-        };
+        vm.product = product;
 
         vm.title = "Product Detail: " + vm.product.productName;
 
