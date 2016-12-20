@@ -16,6 +16,9 @@
     <script src="Scripts/angular-mocks.js"></script>
     <script src="Scripts/angular-ui-router.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/toastr.js"></script>
 
     <!-- Application Script -->
     <script src="app/app.js"></script>
@@ -28,6 +31,7 @@
     <!-- Product Controllers -->
     <script src="app/products/productListCtrl.js"></script>
     <script src="app/products/productDetailCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
 
 </head>
 
@@ -50,7 +54,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a ui-sref="productList">Product List</a></li>
-                    <li><a ui-sref="productEdit({productId:0}) "><i class="glyphicon glyphicon-plus"></i></a>Add Product</li>
+                    <li><a ui-sref="productEdit.info({productId:0})">
+                        <i class="glyphicon glyphicon-plus"></i>
+                        Add Product</a></li>
                 </ul>
             </div>
 
